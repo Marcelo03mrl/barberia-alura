@@ -281,3 +281,27 @@ th {
 .principal p:not(#missao) {
     background: orange;
 }
+
+/* SELETORES AVANÇADOS PARA SEREM USADOS
+
+main p {
+    background: red;
+}
+
+main > p {
+    background: red; 
+}
+
+img + p { 
+    background: blue;
+}
+
+img ~ p {
+    background: yellow
+} 
+
+.principal p:not(#missao) {
+    background: orange;
+}
+
+*/
