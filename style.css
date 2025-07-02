@@ -2,7 +2,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 header {
     background: #BBBBBB;
     padding: 20px 0;
@@ -46,15 +45,7 @@ header {
 
 .imagembeneficios {
     width: 60%;
-    opacity: 1;
-    transition: 400ms;
-    box-shadow: 10px 10px 10px 0 #000000;
 }
-
-.imagem-beneficios:hover {
-    opacity: 0.3;
-}
-
 
 .caixa {
     position: relative;
@@ -81,6 +72,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
 .produtos {
     width: 940px;
     margin: 0 auto;
@@ -95,11 +91,25 @@ nav a {
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+.produtos li:active {
+    border-color: #088C19;
 }
 
 .produtos h2 {
     font-size: 30px;
     font-weight: bold;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
 }
 
 .produto-descricao {
@@ -112,38 +122,9 @@ nav a {
     margin-top: 10px;
 }
 
-
-
-.produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
+main {
+    
 }
-
-nav a:hover {
-    color: #C78C19;
-    text-decoration: underline;
-}
-
-.produtos li:hover {
-    border-color: #C78C19;
-}
-
-.produtos li:active {
-    border-color: #088C19;
-}
-
-.produtos li:hover h2 {
-    font-size: 34px;
-}
-
-main {}
 
 .beneficios {
     padding: 3em 0;
@@ -170,11 +151,18 @@ main {}
 }
 
 .itens:before {
-    content: "★";
+    content: "✔️";
 }
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
 }
 
 form {
@@ -246,19 +234,14 @@ thead {
     font-weight: bold;
 }
 
-td,
-th {
+td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
 }
 
 .mapa {
     padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #888888);
-}
-
-.mapa {
-    padding: 3em 0;
+    background-color: linear-gradient(#FEFEFE, #888888);
 }
 
 .mapa p {
@@ -276,11 +259,6 @@ th {
     margin: 2em auto;
 }
 
-
-
-.principal p:not(#missao) {
-    background: orange;
-}
 
 /* SELETORES AVANÇADOS PARA SEREM USADOS
 
@@ -307,12 +285,7 @@ img ~ p {
 */
 
 @media screen and (max-width: 480px) {
-
-    .caixa,
-    .principal,
-    .conteudo-beneficios,
-    .mapa-conteudo,
-    .video {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
         width: auto;
     }
 
@@ -324,8 +297,7 @@ img ~ p {
         position: static;
     }
 
-    .lista-beneficios,
-    .imagem-beneficios {
+    .lista-beneficios, .imagem-beneficios {
         width: 100%;
     }
 }
